@@ -42,6 +42,6 @@ acme.Empleados.Add(empleado5);
 
 Externo externo = new Externo("Pedro", acme);
 
-acme.Externos.Add(externo);
+acme.Empleados.Add(externo);
 
 Console.WriteLine(acme);

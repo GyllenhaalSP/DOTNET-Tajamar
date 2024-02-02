@@ -4,9 +4,7 @@ public class Empresa
 {
     public string Nombre { get; set; }
     public string Direccion { get; set; }
-    public List<Empleado> Empleados { get; set; } = [];
-
-    public List<Externo> Externos { get; set; } = [];
+    public List<Object> Empleados { get; set; } = [];
 
     public Empresa(string nombre, string direccion)
     {
@@ -20,14 +18,16 @@ public class Empresa
 
         foreach (var empleado in Empleados)
         {
-            info += $"\n\t{empleado}";
+            if (empleado is Administrador or Operario)
+                info += $"\n\t{empleado}";
         }
 
         info += "\nY los siguientes externos:";
 
-        foreach (var externo in Externos)
+        foreach (var empleado in Empleados)
         {
-            info += $"\n\t{externo}";
+            if (empleado is Externo)
+                info += $"\n\t{empleado}";
         }
         return info ;
     }

@@ -15,4 +15,10 @@ public class Externo
     {
         return $"El trabajador externo {Nombre} trabaja para {Empresa.Nombre}";
     }
+
+    public int CalcularDiasVacaciones()
+    {
+        // Conectar con la empresa externa para obtener los días de vacaciones.
+        return 0;
+    }
 }

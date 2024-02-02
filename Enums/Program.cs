@@ -1,4 +1,5 @@
-﻿const int edad = 20;
+﻿Console.Write("Introduce la edad: ");
+var edad = int.Parse(Console.ReadLine());
 
 // Hay que mostrar según la edad 
 // si debe renovar el carnet de conducir
@@ -19,7 +20,7 @@ switch (edad)
         break;
 }
 
-enum Edades
+internal enum Edades
 {
     NoTieneCarnet = 16,
     Mayor65 = 65,
