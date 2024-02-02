@@ -1,25 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿namespace ACME;
 
-namespace EjemploHerencia
+public class Externo
 {
-    public class Externo
+    public Empresa Empresa { get; set;}
+    public string Nombre { get; set; }
+
+    public Externo(string nombre, Empresa empresa)
     {
-        public Empresa Empresa { get; set;}
-        public string Nombre { get; set; }
+        Nombre = nombre;
+        Empresa = empresa;
+    }
 
-        public Externo(string nombre, Empresa empresa)
-        {
-            Nombre = nombre;
-            Empresa = empresa;
-        }
-
-        public override string ToString()
-        {
-            return $"El trabajador externo {Nombre} trabaja para {Empresa.Nombre}";
-        }
-
+    public override string ToString()
+    {
+        return $"El trabajador externo {Nombre} trabaja para {Empresa.Nombre}";
     }
 }

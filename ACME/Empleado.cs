@@ -1,24 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿namespace ACME;
 
-namespace EjemploHerencia
+public class Empleado
 {
-    public class Empleado
+    private const int DiasVacaciones = 25;
+
+    public string Nombre { get; set; }
+
+    public Empresa Empresa { get; set; }
+
+    public Empleado(string nombre, Empresa empresa)
     {
-        protected const int DiasVacaciones = 25;
-        protected int DiasExtra;
+        Nombre = nombre;
+        Empresa = empresa;
+    }
 
-        public string Nombre { get; set; }
-
-        public Empresa Empresa { get; set; }
-
-        public Empleado(string nombre, int diasExtra, Empresa empresa)
-        {
-            Nombre = nombre;
-            DiasExtra = diasExtra;
-            Empresa = empresa;
-        }
+    public virtual int CalcularDiasVacaciones()
+    {
+        return DiasVacaciones;
     }
 }
