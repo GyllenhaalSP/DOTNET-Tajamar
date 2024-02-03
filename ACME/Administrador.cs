@@ -13,6 +13,9 @@ public class Administrador : Empleado
         Matricula = matricula;
     }
 
+    public Administrador(string nombre, Empresa empresa, bool usaParking) : this(nombre, empresa, usaParking,
+        string.Empty) { }
+
     public override int CalcularDiasVacaciones()
     {
         return base.CalcularDiasVacaciones() + DiasExtra;

@@ -33,15 +33,14 @@ Empleado empleado = new Operario("Pepe", Turno.Mañana, acme);
 acme.Contratar(empleado);
 Empleado empleado2 = new Operario("Juan", Turno.Tarde, acme);
 acme.Contratar(empleado2);
-Empleado empleado3 = new Operario("Luis", Turno.Noche, acme);
+Empleado empleado3 = new Operario("Fernando", Turno.Noche, acme);
 acme.Contratar(empleado3);
 Empleado empleado4 = new Administrador("Luis", acme, true, "1234ABC");
 acme.Contratar(empleado4);
-Empleado empleado5 = new Administrador("Ana", acme, false, "");
+Empleado empleado5 = new Administrador("Ana", acme, false);
 acme.Contratar(empleado5);
 
-Externo externo = new Externo("Pedro", acme);
-
+var externo = new Externo("Pedro", acme);
 acme.Contratar(externo);
 
 Console.WriteLine(acme);
