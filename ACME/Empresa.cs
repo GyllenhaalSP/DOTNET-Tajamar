@@ -4,12 +4,17 @@ public class Empresa
 {
     public string Nombre { get; set; }
     public string Direccion { get; set; }
-    public List<Object> Empleados { get; set; } = [];
+    public List<ITrabajador> Empleados { get; set; } = [];
 
     public Empresa(string nombre, string direccion)
     {
         Nombre = nombre;
         Direccion = direccion;
+    }
+
+    public void Contratar(ITrabajador empleado)
+    {
+        Empleados.Add(empleado);
     }
 
     public override string ToString()
@@ -18,7 +23,7 @@ public class Empresa
 
         foreach (var empleado in Empleados)
         {
-            if (empleado is Administrador or Operario)
+            if (empleado is Empleado)
                 info += $"\n\t{empleado}";
         }
 

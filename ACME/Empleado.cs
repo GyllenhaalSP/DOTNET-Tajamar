@@ -1,6 +1,6 @@
 ﻿namespace ACME;
 
-public class Empleado
+public class Empleado : ITrabajador
 {
     private const int DiasVacaciones = 25;
 

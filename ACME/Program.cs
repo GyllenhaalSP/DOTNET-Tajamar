@@ -30,18 +30,18 @@
 var acme = new Empresa("ACME", "Calle Falsa 123");
 
 Empleado empleado = new Operario("Pepe", Turno.Mañana, acme);
-acme.Empleados.Add(empleado);
+acme.Contratar(empleado);
 Empleado empleado2 = new Operario("Juan", Turno.Tarde, acme);
-acme.Empleados.Add(empleado2);
+acme.Contratar(empleado2);
 Empleado empleado3 = new Operario("Luis", Turno.Noche, acme);
-acme.Empleados.Add(empleado3);
+acme.Contratar(empleado3);
 Empleado empleado4 = new Administrador("Luis", acme, true, "1234ABC");
-acme.Empleados.Add(empleado4);
+acme.Contratar(empleado4);
 Empleado empleado5 = new Administrador("Ana", acme, false, "");
-acme.Empleados.Add(empleado5);
+acme.Contratar(empleado5);
 
 Externo externo = new Externo("Pedro", acme);
 
-acme.Empleados.Add(externo);
+acme.Contratar(externo);
 
 Console.WriteLine(acme);

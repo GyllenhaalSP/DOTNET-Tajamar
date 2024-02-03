@@ -1,6 +1,6 @@
 ﻿namespace ACME;
 
-public class Externo
+public class Externo : ITrabajador
 {
     public Empresa Empresa { get; set;}
     public string Nombre { get; set; }
