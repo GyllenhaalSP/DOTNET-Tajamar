@@ -3,35 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaMundo", "HolaMundo\HolaMundo.csproj", "{4C555F7B-A83E-4836-BB90-B5C0034E16B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HolaMundo", "HolaMundo\HolaMundo.csproj", "{4C555F7B-A83E-4836-BB90-B5C0034E16B1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilidades", "Utilidades", "{6DEF07AC-F446-4135-81F1-BAFEABCAF19E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilidades", "Utilidades\Utilidades.csproj", "{A97517F9-E9A6-42FB-B4C3-76A948C249DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilidades", "Utilidades\Utilidades.csproj", "{A97517F9-E9A6-42FB-B4C3-76A948C249DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversorTemperaturas", "ConversorTemperaturas\ConversorTemperaturas.csproj", "{4795D1C7-8D12-43C1-8893-5842B10C7B6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConversorTemperaturas", "ConversorTemperaturas\ConversorTemperaturas.csproj", "{4795D1C7-8D12-43C1-8893-5842B10C7B6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases", "Clases\Clases.csproj", "{716AB805-CD17-433E-8E36-C3F00CF6B736}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clases", "Clases\Clases.csproj", "{716AB805-CD17-433E-8E36-C3F00CF6B736}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Amazon", "Amazon\Amazon.csproj", "{B0D8BC98-754B-4015-AE40-0EFDA781CC1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amazon", "Amazon\Amazon.csproj", "{B0D8BC98-754B-4015-AE40-0EFDA781CC1A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OOP", "OOP", "{32F60520-AFC9-4532-AA3F-C29D7B8D4834}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Herencia", "Herencia", "{FC2C44DC-5942-4875-B765-74E6E33A47B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME", "ACME\ACME.csproj", "{0B10D739-8536-4EE3-B95C-A585B215861B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME", "ACME\ACME.csproj", "{0B10D739-8536-4EE3-B95C-A585B215861B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CondicionalesBucles", "CondicionalesBucles", "{8E8830B1-0C13-4DEC-8417-050999D068A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Condicionales", "Condicionales\Condicionales.csproj", "{21ECC0C5-7443-42FB-8011-03C3B9872633}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Condicionales", "Condicionales\Condicionales.csproj", "{21ECC0C5-7443-42FB-8011-03C3B9872633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BucleFor", "BucleFor\BucleFor.csproj", "{3F3E953D-B019-40B5-A559-8B6E10C4CE4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BucleFor", "BucleFor\BucleFor.csproj", "{3F3E953D-B019-40B5-A559-8B6E10C4CE4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BucleWhile", "BucleWhile\BucleWhile.csproj", "{B3C4A397-5321-4A5D-8765-4EA23208BB91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BucleWhile", "BucleWhile\BucleWhile.csproj", "{B3C4A397-5321-4A5D-8765-4EA23208BB91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch", "Switch\Switch.csproj", "{B95163C9-44E6-460E-8620-59CEC6BB84BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Switch", "Switch\Switch.csproj", "{B95163C9-44E6-460E-8620-59CEC6BB84BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enums", "Enums\Enums.csproj", "{74B88924-77E4-47DD-A0C1-8E0D01AAE7B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Enums", "Enums\Enums.csproj", "{74B88924-77E4-47DD-A0C1-8E0D01AAE7B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClasificacionDePeliculas", "ClasificacionDePeliculas\ClasificacionDePeliculas.csproj", "{4220BE38-7705-4186-A9BF-9B9841D6AEBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,10 @@ Global
 		{74B88924-77E4-47DD-A0C1-8E0D01AAE7B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74B88924-77E4-47DD-A0C1-8E0D01AAE7B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74B88924-77E4-47DD-A0C1-8E0D01AAE7B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4220BE38-7705-4186-A9BF-9B9841D6AEBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4220BE38-7705-4186-A9BF-9B9841D6AEBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4220BE38-7705-4186-A9BF-9B9841D6AEBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4220BE38-7705-4186-A9BF-9B9841D6AEBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
