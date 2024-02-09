@@ -31,8 +31,15 @@ public class Empresa
 
         foreach (var empleado in Empleados)
         {
-            if (empleado is Externo)
+            if (empleado is not Externo) continue;
+            try
+            {
                 info += $"\n\t{empleado}";
+            }
+            catch (NoDatabaseFound e)
+            {
+                info += $"\n\t{e.Message}";
+            }
         }
         return info ;
     }

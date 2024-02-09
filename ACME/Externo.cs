@@ -13,12 +13,11 @@ public class Externo : ITrabajador
 
     public override string ToString()
     {
-        return $"El trabajador externo {Nombre} trabaja para {Empresa.Nombre}";
+        return $"El trabajador externo {Nombre} trabaja para {Empresa.Nombre}. {CalcularDiasVacaciones()}";
     }
 
     public int CalcularDiasVacaciones()
     {
-        // Conectar con la empresa externa para obtener los días de vacaciones.
-        return 0;
+        throw new NoDatabaseFound($"El trabajador externo {Nombre} trabaja para {Empresa.Nombre}. Los empleados externos no tienen vacaciones gestionadas por ACME");
     }
 }
