@@ -125,10 +125,3 @@ static int GenerarId(List<Moneda> monedas)
 {
     return monedas[^1].Id + 1;
 }
-
-
-
-
-
-
-

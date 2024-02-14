@@ -15,3 +15,5 @@ Indícame tres funcionalidades que vas a entregar (En consola)
     Entregar la url del repositorio en Azure DevOps
     Fecha entrega de estas tres características: 23 de febrero
  */
+
+Console.WriteLine("Placeholder");
