@@ -76,7 +76,7 @@ static void ListarMonedas(List<Moneda> monedas)
 {
     foreach (var moneda in monedas)
     {
-        Console.WriteLine($"{moneda.Id}: {moneda.Nombre} ({moneda.CodigoIso})");
+        Console.WriteLine(moneda);
     }
     Console.WriteLine();
 }
