@@ -1,15 +1,10 @@
 ﻿namespace ACME;
 
-public class Externo : ITrabajador
+public class Externo(string nombre, Empresa empresa) : ITrabajador
 {
-    public Empresa Empresa { get; set;}
-    public string Nombre { get; set; }
-
-    public Externo(string nombre, Empresa empresa)
-    {
-        Nombre = nombre;
-        Empresa = empresa;
-    }
+    public Empresa Empresa { get; set; } = empresa;
+    public string Nombre { get; set; } = nombre;
+    public IMensajeria AplicacionMensajeria { get; set; }
 
     public override string ToString()
     {

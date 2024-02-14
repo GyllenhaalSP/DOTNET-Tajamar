@@ -1,16 +1,10 @@
 ﻿namespace ACME;
 
-public class Empresa
+public class Empresa(string nombre, string direccion)
 {
-    public string Nombre { get; set; }
-    public string Direccion { get; set; }
+    public string Nombre { get; set; } = nombre;
+    public string Direccion { get; set; } = direccion;
     public List<ITrabajador> Empleados { get; set; } = [];
-
-    public Empresa(string nombre, string direccion)
-    {
-        Nombre = nombre;
-        Direccion = direccion;
-    }
 
     public void Contratar(ITrabajador empleado)
     {
@@ -24,7 +18,10 @@ public class Empresa
         foreach (var empleado in Empleados)
         {
             if (empleado is Empleado)
+            {
                 info += $"\n\t{empleado}";
+                info += empleado.AplicacionMensajeria.EnviarMensaje("Pocas vacaciones...");
+            }
         }
 
         info += "\nY los siguientes externos:";
@@ -35,11 +32,13 @@ public class Empresa
             try
             {
                 info += $"\n\t{empleado}";
+                
             }
             catch (NoDatabaseFound e)
             {
                 info += $"\n\t{e.Message}";
             }
+            info += empleado.AplicacionMensajeria.EnviarMensaje("Ningunas vacaciones...");
         }
         return info ;
     }

@@ -27,20 +27,29 @@
  *      Nombre y nombre de empresa.
  */
 
+var whatsapp = new WhatsApp();
+var teams = new Teams();
+
 var acme = new Empresa("ACME", "Calle Falsa 123");
 
 Empleado empleado = new Operario("Pepe", Turno.Mañana, acme);
+empleado.AplicacionMensajeria = teams;
 acme.Contratar(empleado);
 Empleado empleado2 = new Operario("Juan", Turno.Tarde, acme);
+empleado2.AplicacionMensajeria = teams;
 acme.Contratar(empleado2);
 Empleado empleado3 = new Operario("Fernando", Turno.Noche, acme);
+empleado3.AplicacionMensajeria = teams;
 acme.Contratar(empleado3);
 Empleado empleado4 = new Administrador("Luis", acme, true, "1234ABC");
+empleado4.AplicacionMensajeria = teams;
 acme.Contratar(empleado4);
 Empleado empleado5 = new Administrador("Ana", acme, false);
+empleado5.AplicacionMensajeria = teams;
 acme.Contratar(empleado5);
 
 var externo = new Externo("Pedro", acme);
+externo.AplicacionMensajeria = whatsapp;
 acme.Contratar(externo);
 
 Console.WriteLine(acme);
