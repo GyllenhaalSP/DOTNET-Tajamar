@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AsincroniaEscritorio"
         mc:Ignorable="d"
-        Title="Ejemplo Asincronía" Height="450" Width="800">
+        Title="Ejemplo Asincronía" Height="489" Width="800">
     <Window.Resources>
         <!-- Estilo personalizado para el botón sin efecto de hover -->
         <Style x:Key="NoHoverButtonStyle" TargetType="Button">
@@ -28,7 +28,7 @@
                 <GradientStop Color="Red"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Button Content="¡Apriétame!" HorizontalAlignment="Center" Margin="0,320,0,0" VerticalAlignment="Top" Height="71" Width="267" FontSize="36" FontWeight="Bold" FontFamily="Cascadia Mono" BorderBrush="Black" Click="Button_Click" Style="{StaticResource NoHoverButtonStyle}">
+        <Button Content="¡Apriétame!" HorizontalAlignment="Center" Margin="0,353,0,0" VerticalAlignment="Top" Height="81" Width="306" FontSize="36" FontWeight="Bold" FontFamily="Cascadia Mono" BorderBrush="Black" Click="Button_Click" Style="{StaticResource NoHoverButtonStyle}">
             <Button.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="Black" Offset="1"/>
@@ -36,14 +36,15 @@
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
-        <TextBlock x:Name="WriteLine" HorizontalAlignment="Left" Margin="230,61,0,0" TextWrapping="Wrap" Text="TEXTO" VerticalAlignment="Top" Height="202" Width="539" FontFamily="Cascadia Mono" FontSize="16" Foreground="White"/>
-        <Image HorizontalAlignment="Left" Height="202" Margin="28,61,0,0" VerticalAlignment="Top" Width="168" Source="/BRAND.png" Stretch="Fill"/>
-        <TextBlock HorizontalAlignment="Left" Margin="28,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="168" TextAlignment="Center" FontSize="20" FontWeight="Bold">
+        <TextBlock x:Name="WriteLine" HorizontalAlignment="Left" Margin="230,41,0,0" TextWrapping="Wrap" Text="TEXTO" VerticalAlignment="Top" Height="121" Width="539" FontFamily="Cascadia Mono" FontSize="16" Foreground="White"/>
+        <Image HorizontalAlignment="Left" Height="202" Margin="28,41,0,0" VerticalAlignment="Top" Width="168" Source="/BRAND.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Margin="28,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="168" TextAlignment="Center" FontSize="20" FontWeight="Bold">
             <TextBlock.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="1"/>
                     <GradientStop Color="Red" Offset="0"/>
                 </LinearGradientBrush>
             </TextBlock.Foreground><Run Language="es-es" Text="GYLLENHAALSP"/></TextBlock>
+        <ListBox x:Name="Consola" Margin="230,167,31,147" Background="Black" Foreground="#FF2AFD00"/>
     </Grid>
 </Window>
