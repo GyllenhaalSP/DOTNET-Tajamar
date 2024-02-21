@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConversorDeMonedasMAUI.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="moneda.jpg"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="Una moneda" />
+
+            <Label
+                Text="CONVERSOR DE MONEDAS"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                Text="Bienvenido al conversor de monedas de Gyllenhaal"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Bienvenida al programa" />
+
+            <Button
+                Text="Lista de monedas"
+                Clicked="OnListaMonedasClicked"
+                SemanticProperties.Description="Botón para ver la lista de monedas" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
