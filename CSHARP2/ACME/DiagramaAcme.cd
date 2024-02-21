@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="ACME.Administrador">
+    <Position X="8.5" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAEAAgEAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Administrador.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACME.Empleado">
+    <Position X="9.75" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAABAAAAAAAQgAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Empleado.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ACME.Empresa">
+    <Position X="13" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAEACAAgAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Empresa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACME.Externo" BaseTypeListCollapsed="true">
+    <Position X="16" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAEAAAAEAAAQgAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Externo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.169" />
+  </Class>
+  <Class Name="ACME.Operario">
+    <Position X="11" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgEAAAQAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Operario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACME.WhatsApp">
+    <Position X="6" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WhatsApp.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ACME.Teams">
+    <Position X="7.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Teams.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ACME.ITrabajador">
+    <Position X="13" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAQgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ITrabajador.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ACME.IMensajeria">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IMensajeria.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ACME.Turno">
+    <Position X="13.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAACBAAAA=</HashCode>
+      <FileName>Operario.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
