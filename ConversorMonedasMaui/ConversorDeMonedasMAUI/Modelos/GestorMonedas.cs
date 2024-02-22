@@ -14,9 +14,9 @@ namespace ConversorDeMonedasMAUI.Modelos
         {
             Monedas =
             [
-                new Moneda("EUR","Euro"),
-                new Moneda("USD", "Dolar"),
-                new Moneda("GBP","Libra Esterlina")
+                new Moneda("EUR","Euro", "es"),
+                new Moneda("USD", "Dolar", "us"),
+                new Moneda("GBP","Libra Esterlina", "gb")
             ];
         }
     }

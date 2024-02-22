@@ -5,12 +5,18 @@
              Title="PaginaConversionMonedas">
     <VerticalStackLayout>
         <Label 
-            Text="Bienvenido al conversor de monedas. Seleccione las monedas de origen y destino y haga clic en Convertir para ver su valor convertido"
+            Text="Bienvenido al conversor de monedas."
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-
+        
+        <Label 
+            Text="Seleccione las monedas de origen y destino y haga clic en Convertir."
+            VerticalOptions="Center"
+            HorizontalOptions="Center" />
+        
         <Label Text="Seleccione Moneda Origen"></Label>
         <Picker x:Name="picMonedaOrigen" ItemDisplayBinding="{Binding NombreMoneda}">
+
         </Picker>
     </VerticalStackLayout>
 </ContentPage>

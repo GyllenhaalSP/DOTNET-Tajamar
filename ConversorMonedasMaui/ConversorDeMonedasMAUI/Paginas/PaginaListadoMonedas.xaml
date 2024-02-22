@@ -7,7 +7,15 @@
         <ListView x:Name="lvwListadoMonedas" VerticalOptions="FillAndExpand">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Detail="{Binding NombreMoneda}" Text="{Binding SiglasMoneda}" />
+                    <ViewCell>
+                        <StackLayout 
+                            Orientation="Horizontal"
+                            Margin="10">
+                            <Image Source="{Binding UrlImagen}" Margin="10"/>
+                            <Label Text="{Binding NombreMoneda}" Margin="10"/>
+                            <Label Text="{Binding SiglasMoneda}" Margin="10"/>
+                        </StackLayout>
+                    </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
