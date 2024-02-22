@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ConversorDeMonedasMAUI.PaginaConversionMonedas"
+             Title="PaginaConversionMonedas">
+    <VerticalStackLayout>
+        <Label 
+            Text="Bienvenido al conversor de monedas. Seleccione las monedas de origen y destino y haga clic en Convertir para ver su valor convertido"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label Text="Seleccione Moneda Origen"></Label>
+        <Picker x:Name="picMonedaOrigen" ItemDisplayBinding="{Binding NombreMoneda}">
+        </Picker>
+    </VerticalStackLayout>
+</ContentPage>

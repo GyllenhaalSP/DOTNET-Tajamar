@@ -25,9 +25,20 @@
                 SemanticProperties.Description="Bienvenida al programa" />
 
             <Button
+                x:Name="btnConvertirMonedas"
+                Text="Convertir monedas"
+                Clicked="OnBtnConvertirMonedasClicked"
+                SemanticProperties.Description="Botón para convertir monedas"
+                SemanticProperties.Hint="Ir al conversor de monedas"
+                HorizontalOptions="Fill"/>
+
+            <Button
+                x:Name="btnVerMonedas"
                 Text="Lista de monedas"
-                Clicked="OnListaMonedasClicked"
-                SemanticProperties.Description="Botón para ver la lista de monedas" />
+                Clicked="OnBtnListaMonedasClicked"
+                SemanticProperties.Description="Botón para ver la lista de monedas"
+                SemanticProperties.Hint="Ir al listado de monedas"
+                HorizontalOptions="Fill"/>
         </VerticalStackLayout>
     </ScrollView>
 

@@ -67,13 +67,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="ListaDeMonedas.xaml.cs">
-	    <DependentUpon>ListaDeMonedas.xaml</DependentUpon>
+	  <Compile Update="Paginas\PaginaListadoMonedas.xaml.cs">
+	    <DependentUpon>PaginaListadoMonedas.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="ListaDeMonedas.xaml">
+	  <MauiXaml Update="Paginas\PaginaConversionMonedas.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Paginas\PaginaListadoMonedas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
