@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ConversorDeMonedasMAUI.MainPage">
+             x:Class="ConversorDeMonedasMAUI.MainPage"
+             Title="Conversor de Monedas">
 
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
+            Margin="10"
             Spacing="25">
             <Image
                 Source="moneda.jpg"
@@ -38,6 +40,14 @@
                 Clicked="OnBtnListaMonedasClicked"
                 SemanticProperties.Description="Botón para ver la lista de monedas"
                 SemanticProperties.Hint="Ir al listado de monedas"
+                HorizontalOptions="Fill"/>
+
+            <Button
+                x:Name="btnVerUsuarios"
+                Text="Lista de usuarios"
+                Clicked="OnBtnListaDeUsuariosClicked"
+                SemanticProperties.Description="Botón para ver la lista de usuarios"
+                SemanticProperties.Hint="Ir al listado de usuarios"
                 HorizontalOptions="Fill"/>
         </VerticalStackLayout>
     </ScrollView>

@@ -4,13 +4,12 @@ namespace ConversorDeMonedasMAUI.Paginas;
 
 public partial class PaginaListadoMonedas : ContentPage
 {
-    public GestorMonedas gestorMonedas { get; set; } = new GestorMonedas();
+    public GestorMoneda GestorMonedas { get; set; } = new GestorMoneda();
 
     public PaginaListadoMonedas()
     {
         InitializeComponent();
 
-        lvwListadoMonedas.ItemsSource = gestorMonedas.Monedas;
-
+        lvwListadoMonedas.ItemsSource = GestorMonedas.Monedas;
     }
 }   

@@ -6,11 +6,20 @@ using System.Threading.Tasks;
 
 namespace ConversorDeMonedasMAUI.Modelos
 {
-    public class Moneda(string siglasMoneda, string nombreMoneda, string codigoPais)
+    public class Moneda
     {
-        public string NombreMoneda { get; set; } = nombreMoneda;
-        public string SiglasMoneda { get; set; } = siglasMoneda;
-        public string CodigoPais { get; set; } = codigoPais;
-        public string UrlImagen => $"https://flagcdn.com/16x12/{CodigoPais}.png";
+        public string? NombreMoneda { get; set; }
+        public string? SiglasMoneda { get; set; }
+        public string? CodigoPais { get; set; }
+        public string UrlImagen => $"https://flagcdn.com/32x24/{CodigoPais}.png";
+
+        public Moneda() { }
+
+        public Moneda(string siglasMoneda, string nombreMoneda, string codigoPais)
+        {
+            SiglasMoneda = siglasMoneda;
+            NombreMoneda = nombreMoneda;
+            CodigoPais = codigoPais;
+        }
     }
 }

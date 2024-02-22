@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace ConversorDeMonedasMAUI.Modelos
 {
-    public class GestorMonedas
+    public class GestorMoneda
     {
         public List<Moneda> Monedas { get; set; }
 
-        public GestorMonedas()
+        public GestorMoneda()
         {
             Monedas =
             [
-                new Moneda("EUR","Euro", "es"),
+                new Moneda("EUR","Euro", "eu"),
                 new Moneda("USD", "Dolar", "us"),
                 new Moneda("GBP","Libra Esterlina", "gb")
             ];

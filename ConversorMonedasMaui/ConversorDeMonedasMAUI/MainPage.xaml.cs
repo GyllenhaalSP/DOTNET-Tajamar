@@ -18,5 +18,15 @@ namespace ConversorDeMonedasMAUI
         {
             Navigation.PushAsync(new PaginaConversionMonedas());
         }
+
+        private void OnBtnListaDeUsuariosClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PaginaListadoUsuarios());
+        }
+
+        private void OnBtnSalirClicked(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
