@@ -1,25 +1,24 @@
-﻿namespace ConversorDeMonedasMAUI
+﻿namespace ConversorDeMonedasMAUI;
+
+public partial class App : Application
 {
-    public partial class App : Application
+    public App()
     {
-        public App()
-        {
-            InitializeComponent();
+        InitializeComponent();
 
-            MainPage = new AppShell();
-        }
+        MainPage = new AppShell();
+    }
 
-        protected override Window CreateWindow(IActivationState activationState)
-        {
-            var window = base.CreateWindow(activationState);
+    protected override Window CreateWindow(IActivationState activationState)
+    {
+        var window = base.CreateWindow(activationState);
 
-            const int newWidth = 500;
-            const int newHeight = 850;
+        const int newWidth = 500;
+        const int newHeight = 850;
 
-            window.Width = newWidth;
-            window.Height = newHeight;
+        window.Width = newWidth;
+        window.Height = newHeight;
 
-            return window;
-        }
+        return window;
     }
 }
