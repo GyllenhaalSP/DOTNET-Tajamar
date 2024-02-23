@@ -28,41 +28,24 @@
             Clicked="BtnVolverClicked"
             Grid.Row="0"
             Grid.Column="0"/>
-        <CollectionView
-            x:Name="ListaMonedas"
-            ItemsSource="{Binding Monedas}"
-            SelectionMode="Single"
-            SelectionChanged="ListaMonedasSelectionChanged"
-            Grid.Row="1"
-            Grid.ColumnSpan="3">
+        <CollectionView ItemsSource="{Binding Monedas}"
+                        Grid.Row="1"
+                        Grid.ColumnSpan="3">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Grid
-                        Padding="10">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
+                    <Grid Padding="10" ColumnSpacing="10">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
-                        <Image
-                            Source="{Binding Imagen}"
-                            HeightRequest="50"
-                            WidthRequest="50"
-                            Grid.Row="0"
-                            Grid.Column="0"/>
-                        <Label
-                            Text="{Binding Nombre}"
-                            FontSize="Large"
-                            Grid.Row="0"
-                            Grid.Column="1"/>
-                        <Label
-                            Text="{Binding CodigoIso}"
-                            FontSize="Medium"
-                            Grid.Row="1"
-                            Grid.Column="1"/>
+                        <Image Source="{Binding Imagen}"
+                               WidthRequest="64"
+                               Grid.Column="0"/>
+                        <Label Text="{Binding Nombre}"
+                               Grid.Column="1"/>
+                        <Label Text="{Binding CodigoIso}"
+                               Grid.Column="2"/>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
